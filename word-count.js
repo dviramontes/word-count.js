@@ -2,7 +2,10 @@
 
 function Words() {}
 
-const sanatize = (str) => {
+const sanatize = s => {
+    const trim = s.trim();
+    const alphanumeric = trim.replace(/[^a-zA-Z0-9 ]+/g, ' ');
+    const str = alphanumeric.trim().split(' ').join();
     if (str.includes(',')) {
         return str.split(',');
     }
