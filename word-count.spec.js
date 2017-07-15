@@ -9,17 +9,17 @@ describe('count()', () => {
         expect(words.count('word')).toEqual(expectedCounts);
     });
 
-    xit('counts one of each word', () => {
+    it('counts one of each word', () => {
         const expectedCounts = { one: 1, of: 1, each: 1 };
         expect(words.count('one of each')).toEqual(expectedCounts);
     });
 
-    xit('counts multiple occurrences of a word', () => {
+    it('counts multiple occurrences of a word', () => {
         const expectedCounts = { one: 1, fish: 4, two: 1, red: 1, blue: 1 };
         expect(words.count('one fish two fish red fish blue fish')).toEqual(expectedCounts);
     });
 
-    xit('handles cramped lists', () => {
+    it('handles cramped lists', () => {
         const expectedCounts = { one: 1, two: 1, three: 1 };
         expect(words.count('one,two,three')).toEqual(expectedCounts);
     });
@@ -29,7 +29,7 @@ describe('count()', () => {
         expect(words.count('car : carpet as java: javascript!!&@$%^&')).toEqual(expectedCounts);
     });
 
-    xit('includes numbers', () => {
+    it('includes numbers', () => {
         const expectedCounts = { testing: 2, 1: 1, 2: 1 };
         expect(words.count('testing 1 2 testing')).toEqual(expectedCounts);
     });
