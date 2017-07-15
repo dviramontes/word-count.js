@@ -1,0 +1,16 @@
+{
+  "name": "word-count",
+  "version": "1.0.0",
+  "description": "Given a phrase, count the occurrences of each word in that phrase.",
+  "main": "word-count.js",
+  "scripts": {
+    "watch:test": "nodemon -w jasmine word-count.js --exec 'npm test'",
+    "test": "jasmine word-count.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.6.0",
+    "nodemon": "^1.11.0"
+  }
+}
