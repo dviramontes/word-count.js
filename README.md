@@ -22,20 +22,6 @@ free: 1
 
 `npm run watch:test` 
 
-## Making the Test Suite Pass
-
-Execute the tests with:
-
-    jasmine <exercise-name>.spec.js
-
-**In many test suites all but the first test have been skipped.
-Once you get a test passing, you can unskip the next one by
-changing `xit` to `it`.**
-
 ## Source
 
-This is a classic toy problem, but we were reminded of it by seeing it in the Go Tour.
-
-## Submitting Incomplete Solutions
-It's possible to submit an incomplete solution so you can see how others have completed the exercise.
-
+[original exercism exercise](https://github.com/alxndr/exercism/tree/master/javascript/word-count)
